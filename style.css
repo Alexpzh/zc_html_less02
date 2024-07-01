@@ -10,10 +10,37 @@ body {
     color: olivedrab;
 }
 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 50%;
+}
+
+
+div:hover {
+    background-color: #0080ff;
+    width: 150px;
+    height: 150px;
+    # добавляем свойство для плавности:
+    transition: 1s;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: olivedrab;
+}
+
+a:active{
+    color: royalblue;
+}
 
 .card{
    width: 400px;
-   height: 650px;
+   height: 550px;
    background-color: burlywood;
    border-radius: 60px;
 }
@@ -24,13 +51,14 @@ body {
    # padding - это внутренний отступ
    # Для внешних отступов используется margin
 }
+
 .info {
    padding: 40px;
    height: 40%;
 }
+
 img {
    position: relative;
-
    left:17%;
    border-radius: 20px;
 }
