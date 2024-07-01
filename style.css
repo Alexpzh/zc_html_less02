@@ -1,64 +1,39 @@
 body {
-    background-color: lightblue
+    background-color: lightblue;
 }
 
-#text {
-    color: royalblue;
-}
-
-.text {
-    color: olivedrab;
-}
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: deeppink;
-    border-radius: 50%;
-}
-
-
-div:hover {
-    background-color: #0080ff;
-    width: 150px;
-    height: 150px;
-    # добавляем свойство для плавности:
-    transition: 1s;
-}
-
-a:link {
-    color: deeppink;
-}
-
-a:visited {
-    color: olivedrab;
-}
-
-a:active{
-    color: royalblue;
+.container {
+  display: flex;
+  flex-direction: row | row-reverse | column | column-reverse;
 }
 
 .card{
    width: 400px;
-   height: 550px;
+   height: 650px;
+   padding: 20px;
+   margin: 20px;
    background-color: burlywood;
-   border-radius: 60px;
+   border-radius: 30px;
 }
 
 .photo {
    height: 40%;
-   padding: 40px;
-   # padding - это внутренний отступ
-   # Для внешних отступов используется margin
+   padding: 20px;
 }
 
 .info {
-   padding: 40px;
-   height: 40%;
+   height: 100%;
+   padding: 10px;
 }
 
 img {
    position: relative;
-   left:17%;
-   border-radius: 20px;
+   width: 100%;
+   height: auto;
+   left: 5px;
+   border-radius: 10px;
+}
+
+.card:hover {
+    background-color: #0080ff;
 }
